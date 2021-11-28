@@ -25,7 +25,11 @@ async function getQuote() {
   loading();
 //  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   const apiUrl =
-    'https://api.forismatic.com/api/1.0/';
+    "https://healthruwords.p.rapidapi.com/v1/quotes/?t=Wisdom&maxR=1&size=medium&id=731", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "healthruwords.p.rapidapi.com",
+		"x-rapidapi-key": "47e7287f85msh959e0c4fc787806p1404a8jsn132ac4644a40";
 
   try {
     const response = await fetch( apiUrl);
